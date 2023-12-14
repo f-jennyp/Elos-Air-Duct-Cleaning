@@ -124,8 +124,9 @@ h3 {
 
 p,
 ul,
-nav ul li a {
-  font-family: 'Arial', sans-serif;
+nav ul li a,
+span {
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.8;
@@ -310,6 +311,10 @@ nav ul li a {}
   position: relative;
 }
 
+#banner .img-holder img {
+  width: 100%;
+}
+
 #banner .banner-con {
   position: absolute;
   display: block;
@@ -333,7 +338,6 @@ nav ul li a {}
 
 #banner .logo-holder span {
   font-size: 20px;
-  font-family: 'Poppins';
   text-align: end;
 }
 
@@ -358,16 +362,17 @@ nav ul li a {}
 /*-----------------------------------------------CONTENT-----------------------------------------------*/
 /*WELCOME*/
 #welcome {
-  background: url('../images/content/wel-bg-img.png')no-repeat center;
+  background: url('../images/content/welcome-bg.png')no-repeat center;
   -webkit-background-size: cover;
   background-size: cover;
   position: relative;
-  z-index: -1;
+  background-position: top left;
+  margin-top: -345px;
+  padding-top: 140px;
+  padding-bottom: 240px;
 }
 
-#welcome .wel-content {
-  margin-top: -229px;
-}
+#welcome .wel-content {}
 
 #welcome .left {
   width: 100%;
@@ -405,6 +410,7 @@ nav ul li a {}
 
 #welcome .right .to-sm {
   color: #fff;
+  margin-right: 28px;
 }
 
 #welcome .phone {
@@ -415,14 +421,19 @@ nav ul li a {}
 
 /*SERVICES*/
 #services {
-  background: url('../images/common/services.jpg')no-repeat top;
+  background: url(../images/content/services-bg.png)no-repeat top;
   -webkit-background-size: cover;
   background-size: cover;
+  position: relative;
+  margin-top: -202px;
+  padding-top: 33px;
+  color: #fff;
 }
 
 #services .ser-con {
   display: inline-flex;
   gap: 25px;
+  margin: auto;
 }
 
 #services .ser-con .box {
@@ -437,7 +448,39 @@ nav ul li a {}
   font-family: 'Montserrat';
   color: #fff;
   font-weight: 700;
+  margin-top: 20px;
 }
+
+#services .img-holder img {
+  border-radius: 50px;
+}
+
+#services .ser-con2 {
+  margin: auto;
+  gap: 64px;
+  padding: 61px;
+}
+
+#services .right {
+  margin-top: 36px;
+}
+
+#services .right ul {
+  font-size: 40px;
+  font-weight: bold;
+  list-style: none;
+  margin-left: 69px;
+}
+
+
+#services .btn-holder {
+  text-align: left;
+}
+
+#services .btn {
+  margin-top: 36px;
+}
+
 
 
 /*gallery*/
@@ -459,12 +502,79 @@ nav ul li a {}
   background-size: cover;
 }
 
-#testimonials p.auth {}
-
-#testimonials .stars {
-  color: #FFFF00;
+#testimonials .row {
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
 }
 
+#testimonials .left {
+  color: #2626FF;
+  width: 560px;
+}
+
+#testimonials .left .btn-holder {
+  margin-top: 63px;
+  gap: 40px;
+  display: flex;
+}
+
+#testimonials .right {
+  width: 792px;
+  padding: 92px;
+}
+
+#testimonials .remarks,
+#testimonials .auth-loc {
+  font-size: 18px;
+}
+
+#testimonials .remarks {
+  font-style: italic;
+}
+
+#testimonials .read-more {
+  padding: 63px 0;
+}
+
+#testimonials .read-more a {
+  text-decoration: underline;
+}
+
+#testimonials .auth {
+  font-size: 22px;
+}
+
+#testimonials .stars {
+  color: #e3e300;
+  font-size: 33px;
+}
+
+ */
+
+/* service areas */
+
+#service-area .ser-area-con p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+#service-area .phone {
+  display: flex;
+  justify-content: center;
+}
+
+#service-area .to-sm {
+  margin-right: 28px;
+}
+
+#service-area .slider-img {
+  display: flex;
+}
+
+#service-area .works img {
+  border-radius: 30px;
+}
 
 /*CONTACT*/
 #contact {
@@ -474,6 +584,19 @@ nav ul li a {}
 #contact .ctc-form label {
   width: 32%
 }
+
+#contact .title {
+  font-family: 'Poppins';
+  font-size: 55px;
+  font-weight: 700;
+}
+
+#contact p {
+  font-family: 'Myriad Pro';
+  font-size: 15px;
+  width: 540px;
+}
+
 
 form .messages p {
   display: none;

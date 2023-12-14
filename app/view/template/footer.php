@@ -2,43 +2,48 @@
 	<div id="footer">
 
 		<div class="row flex">
-			<div class="right">
-				<div class="title">CONTACT US</div>
-				<span>We will be glad to answer your questions, feel free to ask a piece of information or a quotation.
-					We
-					are
-					looking forward to work with you.</span>
-				<form action="sendContactForm" method="post" class="sends-email ctc-form">
+			<div class="right text-left">
+				<div id="contact">
+					<div class="title">CONTACT US</div>
+					<p>We will be glad to answer your questions, feel free to ask a piece of information or a
+						quotation.
+						We
+						are
+						looking forward to work with you.</p>
+					<form action="sendContactForm" method="post" class="sends-email ctc-form">
 
-					<label><span class="ctc-hide">Name</span>
-						<input type="text" name="name" placeholder="Name"></label>
-					<label><span class="ctc-hide">Address</span>
-						<input type="text" name="address" placeholder="Address"></label>
-					<label><span class="ctc-hide">Email</span>
-						<input type="text" name="email" placeholder="Email"></label>
-					<label><span class="ctc-hide">Phone</span>
-						<input type="text" name="phone" placeholder="Phone"></label>
+						<label><span class="ctc-hide">Name</span>
+							<input type="text" name="name" placeholder="Name"></label>
+						<label><span class="ctc-hide">Address</span>
+							<input type="text" name="address" placeholder="Address"></label>
+						<label><span class="ctc-hide">Email</span>
+							<input type="text" name="email" placeholder="Email"></label>
+						<label><span class="ctc-hide">Phone</span>
+							<input type="text" name="phone" placeholder="Phone"></label>
 
-					<label><span class="ctc-hide">Message</span>
-						<textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
-					</label>
-					<label for="g-recaptcha-response"><span class="ctc-hide">Recaptcha</span></label>
-					<div class="g-recaptcha"></div>
-					<label>
-						<input type="checkbox" name="consent" class="consentBox">I hereby consent to having this website
-						store my submitted information so that they can respond to my inquiry.
-					</label><br>
-					<?php if ($this->siteInfo['policy_link']): ?>
-						<label>
-							<input type="checkbox" name="termsConditions" class="termsBox" /> I hereby confirm that I have
-							read
-							and understood this website's <a href="<?php $this->info("policy_link"); ?>"
-								target="_blank">Privacy
-								Policy.</a>
+						<label><span class="ctc-hide">Message</span>
+							<textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
 						</label>
-					<?php endif ?>
-					<button type="submit" class="ctcBtn btn" disabled>Submit Form</button>
-				</form>
+						<label for="g-recaptcha-response"><span class="ctc-hide">Recaptcha</span></label>
+						<div class="g-recaptcha"></div>
+						<label>
+							<input type="checkbox" name="consent" class="consentBox">I hereby consent to having this
+							website
+							store my submitted information so that they can respond to my inquiry.
+						</label><br>
+						<?php if ($this->siteInfo['policy_link']): ?>
+							<label>
+								<input type="checkbox" name="termsConditions" class="termsBox" /> I hereby confirm that I
+								have
+								read
+								and understood this website's <a href="<?php $this->info("policy_link"); ?>"
+									target="_blank">Privacy
+									Policy.</a>
+							</label>
+						<?php endif ?>
+						<button type="submit" class="ctcBtn btn" disabled>Submit Form</button>
+					</form>
+				</div>
 			</div>
 
 			<div class="left">
@@ -76,7 +81,7 @@
 					<a href="<?php $this->info('gp_link') ?>" target="_blank">g</a>
 				</div>
 			</div>
-			
+
 			<div class="flex">
 				<nav>
 					<ul>
@@ -117,6 +122,7 @@
 </footer>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="<?php echo URL; ?>public/scripts/slick.min.js"></script>
 <script src="<?php echo URL; ?>public/scripts/sendform.js" data-view="<?php echo $view; ?>" id="sendform"></script>
 <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  -->
 <script src="<?php echo URL; ?>public/scripts/responsive-menu.js"></script>
@@ -131,6 +137,26 @@
 	<textarea id="g-recaptcha-response" class="destroy-on-load"></textarea>
 	<script src='//www.google.com/recaptcha/api.js?onload=captchaCallBack&render=explicit' async defer></script>
 	<script>
+		$('.autoplay').slick({
+			accessibility: true,
+			arrows: true,
+			autoplay: false,
+			slidesToShow: 1,
+			slidesPerRow: 1,
+			arrows: true,
+			dots: true,
+			responsive: [{
+				breakpoint: 960,
+				settings: {
+					slidesPerRow: 1
+				}
+			}, {
+				breakpoint: 500,
+				settings: "unslick" // destroys slick
+			}]
+
+		});
+
 		var captchaCallBack = function () {
 			$('.g-recaptcha').each(function (index, el) {
 				var recaptcha = grecaptcha.render(el, { 'sitekey': '<?php $this->info("site_key"); ?>' });
