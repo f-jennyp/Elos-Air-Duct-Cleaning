@@ -13,16 +13,16 @@
 					<form action="sendContactForm" method="post" class="sends-email ctc-form">
 
 						<label><span class="ctc-hide">Name</span>
-							<input type="text" name="name" placeholder="Name"></label>
+							<input type="text" name="name" placeholder="Name:"></label>
 						<label><span class="ctc-hide">Address</span>
-							<input type="text" name="address" placeholder="Address"></label>
+							<input type="text" name="address" placeholder="Address:"></label>
 						<label><span class="ctc-hide">Email</span>
-							<input type="text" name="email" placeholder="Email"></label>
+							<input type="text" name="email" placeholder="Email:"></label>
 						<label><span class="ctc-hide">Phone</span>
-							<input type="text" name="phone" placeholder="Phone"></label>
+							<input type="text" name="phone" placeholder="Phone:"></label>
 
-						<label><span class="ctc-hide">Message</span>
-							<textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
+						<label><span class="ctc-hide">Message:</span>
+							<textarea name="message" cols="30" rows="10" placeholder="Message:"></textarea>
 						</label>
 
 						<div class="checkbox">
@@ -59,7 +59,7 @@
 					<div class="text-left phone content">
 						<img src="public/images/content/foot-phone.png" alt="">
 						<div class="text-left">
-							<div class="label">Phone</div>
+							<div class="label">PHONE</div>
 							<a href="tel:<?php $this->info("phone"); ?>">
 								<?php $this->info("phone"); ?>
 							</a>
@@ -69,7 +69,7 @@
 					<div class="text-left email content">
 						<img src="public/images/content/foot-email.png" alt="">
 						<div class="text-left">
-							<div class="label">Email</div>
+							<div class="label">EMAIL</div>
 							<a href="mailto:<?php $this->info("email"); ?>">
 								<?php $this->info("email"); ?>
 							</a>
@@ -79,7 +79,7 @@
 					<div class="text-left location content">
 						<img src="public/images/content/foot-add.png" alt="">
 						<div class="text-left">
-							<div class="label">Address</div>
+							<div class="label">LOCATION</div>
 							<a href="tel:<?php $this->info("address"); ?>">
 								<?php $this->info("address"); ?>
 							</a>

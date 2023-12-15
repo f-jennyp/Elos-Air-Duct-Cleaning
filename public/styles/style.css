@@ -110,7 +110,7 @@ h1,
 h2 {
   font-family: 'Ethnocentric', sans-serif;
   font-size: 60px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.2;
   padding: 10px 0;
 }
@@ -136,7 +136,6 @@ span {
 .to-sm {
   font-family: 'Poppins';
   font-size: 25px;
-  font-weight: 400;
   letter-spacing: 3px;
 }
 
@@ -151,7 +150,7 @@ span {
   width: 250px;
   font-size: 18px;
   font-family: 'Poppins', sans-serif;
-  font-weight: 900;
+  font-weight: 500;
   background: #2626FF;
   color: #FFF;
   line-height: 1.2;
@@ -223,12 +222,13 @@ span {
 
 #header .header-con {
   background: #2626FF;
-  padding: 15px 43px 15px 108px;
+  padding: 0 43px 0 108px;
   border-radius: 0 0 0 123px;
   z-index: 1;
   position: absolute;
   width: 100%;
   right: 0;
+  align-items: center;
 }
 
 #header nav a#pull {
@@ -238,17 +238,17 @@ span {
 #header nav {
   position: relative;
   z-index: 999;
+  width: 841px;
 }
 
 #header nav ul {
-  gap: 41px;
-  display: inline-flex;
-  margin: auto;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 #header .nav-holder {
-  margin-top: 12.5px;
+  
 }
 
 nav ul {
@@ -259,15 +259,27 @@ nav ul {
 
 nav ul li {
   display: inline-block;
+  /* padding: 31px 0; */
 }
 
 nav ul li a {
   font-size: 18px;
   font-family: 'Poppins';
   color: #fff;
-  font-weight: 500;
-  padding: 31px 15px;
+  font-weight: 100;
+  padding: 0 15px;
+  line-height: 94px;
+  display: block;
 }
+
+/* #header nav ul li.active-menu,
+#header nav ul li:hover{
+  background: #fff;
+}
+#header nav ul li:hover a{
+  font-weight: 700;
+  color: #2626FF;
+} */
 
 #header nav ul li.active-menu a,
 #header nav ul li a:hover {
@@ -280,12 +292,14 @@ nav ul li a {}
 
 #header .socials-con {
   align-items: center;
+  padding: 14px 25px;
 }
 
 #header .socials-con .btn {
   background: #fff;
   color: #2626FF;
   margin-right: 20px;
+  font-weight: 900;
 }
 
 #header .h-socials {
@@ -335,6 +349,10 @@ nav ul li a {}
   text-align: end;
 }
 
+#banner .logo-holder img {
+  margin-bottom: -20px;
+}
+
 #banner .logo-holder span {
   font-size: 20px;
   text-align: end;
@@ -349,6 +367,7 @@ nav ul li a {}
 #banner .to-sm {
   font-weight: 600;
   letter-spacing: 0.5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #banner .btn-holder {
@@ -402,7 +421,7 @@ nav ul li a {}
 #welcome .content {
   margin-top: 10px;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 #welcome .right img {
@@ -450,7 +469,7 @@ nav ul li a {}
   font-size: 20px;
   font-family: 'Montserrat';
   color: #fff;
-  font-weight: 700;
+  font-weight: 600;
   margin-top: 20px;
 }
 
@@ -481,7 +500,7 @@ nav ul li a {}
 }
 
 #services .btn {
-  margin-top: 36px;
+  margin: 36px 0 0 auto;
 }
 
 
@@ -701,6 +720,10 @@ nav ul li a {}
   color: #666666;
 }
 
+#contact .flex {
+  align-items: flex-end;
+}
+
 
 form .messages p {
   display: none;
@@ -845,14 +868,15 @@ form .alert-danger {
   font-weight: 600;
 }
 
-#footer .socials a {
-  font-family: 'Icons Social Media 8';
-  font-size: 50px;
+#footer .socials {
+  margin-left: 27px;
+
 }
 
 #footer .socials img {
-  width: 60px;
+  width: 50px;
     height: auto;
+    margin-left: 3px;
 }
 
 
