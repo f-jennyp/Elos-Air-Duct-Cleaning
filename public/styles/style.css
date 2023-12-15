@@ -186,14 +186,13 @@ span {
 
 /*SOCIAL*/
 .socials a {
-  font-size: 30px;
+  font-size: 50px;
   line-height: 1.2;
-  font-family: 'Socialico';
-  letter-spacing: 11px;
-  padding: 0 20px;
-  color: #fff
+  font-family: 'Icons Social Media 8';
+  color: #fff !important;
 }
 
+/* 
 .socials a.ig_link {
   font-family: 'socialico-plus';
 }
@@ -216,7 +215,7 @@ span {
 
 .socials a[href="https://instagram.com"] {
   color: #2F689B;
-}
+} */
 
 
 /*-----------------------------------------------HEADER-----------------------------------------------*/
@@ -321,7 +320,7 @@ nav ul li a {}
   width: 100%;
   text-align: left;
   color: #fff;
-  top: 39%;
+  top: 41%;
   left: 0;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -344,7 +343,7 @@ nav ul li a {}
 #banner .content-holder .row {
   width: 100%;
   max-width: 821px;
-  margin: 0;
+  margin: 0 76px;
 }
 
 #banner .to-sm {
@@ -372,7 +371,12 @@ nav ul li a {}
   padding-bottom: 240px;
 }
 
-#welcome .wel-content {}
+#welcome .wel-content {
+  margin: auto;
+  justify-content: center;
+  gap: 69px;
+  align-items: center;
+}
 
 #welcome .left {
   width: 100%;
@@ -398,10 +402,7 @@ nav ul li a {}
 #welcome .content {
   margin-top: 10px;
   font-size: 18px;
-}
-
-#welcome .right {
-  margin: auto;
+  line-height: 1.5;
 }
 
 #welcome .right img {
@@ -428,6 +429,8 @@ nav ul li a {}
   margin-top: -202px;
   padding-top: 33px;
   color: #fff;
+  padding-bottom: 172px;
+  margin-bottom: -300px;
 }
 
 #services .ser-con {
@@ -497,15 +500,20 @@ nav ul li a {}
 
 /*testimonials*/
 #testimonials {
-  background: url('../images/common/testimonials.jpg')no-repeat top;
-  -webkit-background-size: cover;
-  background-size: cover;
+  background: url('../images/content/testi-bg.png')no-repeat top;
+  background-size: auto;
+  background-position: left top;
+  padding-top: 242px;
+  padding-bottom: 108px;
+  margin-bottom: -310px;
 }
 
 #testimonials .row {
   justify-content: center;
   align-items: center;
   gap: 90px;
+  position: relative;
+  margin-top: -117px;
 }
 
 #testimonials .left {
@@ -522,6 +530,10 @@ nav ul li a {}
 #testimonials .right {
   width: 792px;
   padding: 92px;
+  border-radius: 50px;
+  background: #fff;
+  box-shadow: 0 0 23px rgba(0, 0, 0, 0.1);
+  z-index: 1;
 }
 
 #testimonials .remarks,
@@ -550,35 +562,125 @@ nav ul li a {}
   font-size: 33px;
 }
 
- */
+.slick-prev {
+  left: -112px;
+}
+
+.slick-next {
+  right: -112px;
+}
+
+.slick-prev::before {
+  content: '<';
+}
+
+.slick-next::before {
+  content: '>';
+}
+
+.slick-prev::before,
+.slick-next::before {
+  font-family: 'Poppins';
+  font-size: 44px;
+  color: #fff;
+  line-height: 0.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+.slick-prev:hover:before {
+  opacity: 1;
+}
+
+.slick-prev,
+.slick-next {
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background: #2626FF;
+}
+
 
 /* service areas */
 
+#service-area {
+  background: url('../images/content/ser-areas-bg.png')no-repeat top;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+  padding-bottom: 54px;
+}
+
+#service-area .row {
+  padding-top: 296px;
+}
+
 #service-area .ser-area-con p {
   font-size: 20px;
+  width: 100%;
   line-height: 1.5;
+  max-width: 1064px;
+  padding: 28px;
+  margin: auto;
 }
+
 
 #service-area .phone {
   display: flex;
   justify-content: center;
+  margin-bottom: 73px;
+  align-items: center;
+}
+
+#service-area .phone a {
+  font-size: 50px;
 }
 
 #service-area .to-sm {
   margin-right: 28px;
 }
 
-#service-area .slider-img {
-  display: flex;
+#service-area .works-slider {
+  margin-top: 30px;
+}
+
+#service-area .works .slick-prev {
+  left: -21px;
+  z-index: 1;
+}
+
+#service-area .works .slick-next {
+  right: 6px;
 }
 
 #service-area .works img {
   border-radius: 30px;
 }
 
+#bg-img {
+  background: url('../images/content/bg-img.png')no-repeat top;
+  background-size: auto;
+  background-position: left top;
+  padding: 365px;
+  margin: -350px 0px;
+}
+
 /*CONTACT*/
 #contact {
   position: relative;
+  width: 871px;
+  padding: 42px 73px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 23px rgba(0, 0, 0, 0.1);
 }
 
 #contact .ctc-form label {
@@ -595,6 +697,8 @@ nav ul li a {}
   font-family: 'Myriad Pro';
   font-size: 15px;
   width: 540px;
+  font-weight: 100;
+  color: #666666;
 }
 
 
@@ -636,28 +740,30 @@ form .alert-danger {
 
 .ctc-form input[type="text"],
 .ctc-form textarea {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  color: #000;
-  height: 45px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: #202020;
+  height: 60px;
   display: block;
   width: 100%;
-  border: 1px solid #A8A8A8;
+  border: 0;
   padding: 5px 10px;
   box-sizing: border-box;
   margin: 0 auto 8px;
   resize: none;
   background: #EEEEEE;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .ctc-form ::placeholder,
 .ctc-form label {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
-  color: #fff;
+  font-family: 'Myriad Pro', sans-serif;
+  font-size: 13px;
+  font-weight: 100;
+  color: #666666;
   line-height: 1.8;
   letter-spacing: .03px;
-  text-align: left;
+
 }
 
 .ctc-form ::placeholder {
@@ -669,10 +775,19 @@ form .alert-danger {
   padding-top: 10px;
 }
 
+.ctc-form .checkbox {
+  width: 100%;
+  max-width: 500px;
+  text-align: left;
+}
+
 .ctc-form button {
   display: block;
   border: none;
-  margin: 20px auto 0
+  border-radius: 50px;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  letter-spacing: .8px;
 }
 
 .ctc-form .recap {
@@ -687,56 +802,89 @@ form .alert-danger {
   display: none;
 }
 
+#footer .left .logo-holder {
+  text-align: right;
+}
+
+#footer .logo-holder .logo img {
+  height: auto;
+  width: 453px;
+  margin-bottom: -23px;
+}
+
+#footer .logo-holder span {
+  color: #fff;
+  font-size: 20px;
+  margin: 0;
+}
+
+#footer .left .info .content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 44px;
+}
+
+#footer .left .text-left {
+  margin-left: 20px;
+  color: #fff;
+}
+
+#footer .left .label {
+  font-size: 15px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+}
+
+#footer .left a {
+  font-size: 18px;
+  font-family: 'Montserrat';
+}
+
+#footer .left .phone a {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+#footer .socials a {
+  font-family: 'Icons Social Media 8';
+  font-size: 50px;
+}
+
+#footer .socials img {
+  width: 60px;
+    height: auto;
+}
+
 
 /*-----------------------------------------------FOOTER-----------------------------------------------*/
 #footer {
-  background: url('../images/common/footer.jpg')no-repeat top;
+  background: url('../images/content/footter-bg.png')no-repeat top;
   -webkit-background-size: cover;
   background-size: cover;
 }
 
-#footer .row {}
-
-#footer h3 {
-  width: 32%;
+#footer .row {
+  display: flex;
+  justify-content: center;
+  gap: 81px;
+  align-items: end;
 }
 
-#footer .email {
-  background: url('../images/common/email.png')no-repeat top center;
-  background-size: 81px 92px
-}
-
-#footer .phone {
-  background: url('../images/common/phone2.png')no-repeat top center;
-  background-size: 81px 92px
-}
-
-#footer .location {
-  background: url('../images/common/location.png')no-repeat top center;
-  background-size: 81px 92px
+#footer nav {
+  padding: 37px 0 27px;
 }
 
 #footer nav ul li {
   display: inline-block;
   vertical-align: middle;
-  width: 20%;
-  text-align: left;
-  padding: 39px 0;
-  min-height: 75px;
+  text-align: center;
   box-sizing: border-box;
-}
-
-#footer nav ul li a {
-  padding: 39px 0 25px;
-}
-
-#footer .copyrights {
-  background: #3D3330;
-  padding: 20px 0
 }
 
 #footer .copyrights p {
   color: #fff;
+  font-weight: 100;
+  font-size: 18px;
 }
 
 .techno img {

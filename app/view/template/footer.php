@@ -1,7 +1,7 @@
 <footer>
 	<div id="footer">
 
-		<div class="row flex">
+		<div class="row">
 			<div class="right text-left">
 				<div id="contact">
 					<div class="title">CONTACT US</div>
@@ -24,83 +24,101 @@
 						<label><span class="ctc-hide">Message</span>
 							<textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
 						</label>
-						<label for="g-recaptcha-response"><span class="ctc-hide">Recaptcha</span></label>
-						<div class="g-recaptcha"></div>
-						<label>
-							<input type="checkbox" name="consent" class="consentBox">I hereby consent to having this
-							website
-							store my submitted information so that they can respond to my inquiry.
-						</label><br>
-						<?php if ($this->siteInfo['policy_link']): ?>
+
+						<div class="checkbox">
 							<label>
-								<input type="checkbox" name="termsConditions" class="termsBox" /> I hereby confirm that I
-								have
-								read
-								and understood this website's <a href="<?php $this->info("policy_link"); ?>"
-									target="_blank">Privacy
-									Policy.</a>
+								<input type="checkbox" name="consent" class="consentBox">I hereby consent to having this
+								website store my submitted information so that they can respond to my inquiry.
 							</label>
-						<?php endif ?>
-						<button type="submit" class="ctcBtn btn" disabled>Submit Form</button>
+
+							<?php if ($this->siteInfo['policy_link']): ?>
+								<label>
+									<input type="checkbox" name="termsConditions" class="termsBox" /> I hereby confirm that
+									I
+									have read and understood this website's <a href="<?php $this->info("policy_link"); ?>"
+										target="_blank">Privacy
+										Policy.</a>
+								</label>
+							<?php endif ?>
+						</div>
+						<label for="g-recaptcha-response"><span class="ctc-hide">Recaptcha</span></label>
+						<div class="flex">
+							<div class="g-recaptcha"></div>
+							<button type="submit" class="ctcBtn btn" disabled>SUBMIT FORM</button>
+						</div>
 					</form>
 				</div>
 			</div>
 
-			<div class="left">
+			<div class="left text-left">
 				<div class="logo-holder">
 					<div class="logo"><img src="public/images/content/h-logo.png" alt=""></div> <span>lic#:
 						1112995</span>
 				</div>
+				<div class="info">
+					<div class="text-left phone content">
+						<img src="public/images/content/foot-phone.png" alt="">
+						<div class="text-left">
+							<div class="label">Phone</div>
+							<a href="tel:<?php $this->info("phone"); ?>">
+								<?php $this->info("phone"); ?>
+							</a>
+						</div>
+					</div>
 
-				<h3 class="phone text-left">
-					<img src="public/images/content/foot-phone.png" alt="">
-					<small>Phone</small>
-					<a href="tel:<?php $this->info("phone"); ?>">
-						<?php $this->info("phone"); ?>
-					</a>
-				</h3>
-				<h3 class="email text-left">
-					<img src="public/images/content/foot-email.png" alt="">
-					<small>Email</small>
-					<a href="mailto:<?php $this->info("email"); ?>">
-						<?php $this->info("email"); ?>
-					</a>
-				</h3>
-				<h3 class="location text-left">
-					<img src="public/images/content/foot-add.png" alt="">
-					<small>Location</small>
-					<span>
-						<?php $this->info("address"); ?>
-					</span>
-				</h3>
+					<div class="text-left email content">
+						<img src="public/images/content/foot-email.png" alt="">
+						<div class="text-left">
+							<div class="label">Email</div>
+							<a href="mailto:<?php $this->info("email"); ?>">
+								<?php $this->info("email"); ?>
+							</a>
+						</div>
+					</div>
+
+					<div class="text-left location content">
+						<img src="public/images/content/foot-add.png" alt="">
+						<div class="text-left">
+							<div class="label">Address</div>
+							<a href="tel:<?php $this->info("address"); ?>">
+								<?php $this->info("address"); ?>
+							</a>
+						</div>
+					</div>
+				</div>
+
 
 				<div class="socials">
-					<a href="<?php $this->info('fb_link') ?>" target="_blank">f</a>
-					<a href="<?php $this->info('ig_link') ?>" target="_blank">c</a>
-					<a href="<?php $this->info('tt_link') ?>" target="_blank">l</a>
-					<a href="<?php $this->info('gp_link') ?>" target="_blank">g</a>
+					<ul>
+						<a href="<?php $this->info('fb_link') ?>" target="_blank"><img
+								src="public/images/content/ft-fb.png" alt=""></a>
+						<a href="<?php $this->info('ig_link') ?>" target="_blank"><img
+								src="public/images/content/ft-ig.png" alt=""></a>
+						<a href="<?php $this->info('tt_link') ?>" target="_blank"><img
+								src="public/images/content/ft-tw.png" alt=""></a>
+						<a href="<?php $this->info('gp_link') ?>" target="_blank"><img
+								src="public/images/content/ft-gl.png" alt=""></a>
+					</ul>
 				</div>
 			</div>
-
-			<div class="flex">
-				<nav>
-					<ul>
-						<li <?php $this->helpers->isActiveMenu("home"); ?>><a href="<?php echo URL ?>">HOME</a></li>
-						<li <?php $this->helpers->isActiveMenu("about"); ?>><a
-								href="<?php echo URL ?>about#content">ABOUT
-								US</a></li>
-						<li <?php $this->helpers->isActiveMenu("services"); ?>><a
-								href="<?php echo URL ?>services#content">SERVICES</a></li>
-						<li <?php $this->helpers->isActiveMenu("testimonials"); ?>><a
-								href="<?php echo URL ?>testimonials#content">TESTIMONIALS</a></li>
-						<li <?php $this->helpers->isActiveMenu("contact"); ?>><a
-								href="<?php echo URL ?>contact#content">CONTACT US</a></li>
-						<li <?php $this->helpers->isActiveMenu("gallery"); ?>><a
-								href="<?php echo URL ?>gallery#content">GALLERY</a></li>
-					</ul>
-				</nav>
-			</div>
 		</div>
+
+		<nav>
+			<ul>
+				<li <?php $this->helpers->isActiveMenu("home"); ?>><a href="<?php echo URL ?>">HOME</a></li>
+				<li <?php $this->helpers->isActiveMenu("about"); ?>><a href="<?php echo URL ?>about#content">ABOUT
+						US</a></li>
+				<li <?php $this->helpers->isActiveMenu("services"); ?>><a
+						href="<?php echo URL ?>services#content">SERVICES</a></li>
+				<li <?php $this->helpers->isActiveMenu("testimonials"); ?>><a
+						href="<?php echo URL ?>testimonials#content">TESTIMONIALS</a></li>
+				<li <?php $this->helpers->isActiveMenu("contact"); ?>><a href="<?php echo URL ?>contact#content">CONTACT
+						US</a></li>
+				<li <?php $this->helpers->isActiveMenu("gallery"); ?>><a
+						href="<?php echo URL ?>gallery#content">GALLERY</a></li>
+			</ul>
+		</nav>
+
 
 
 		<div class="copyrights">
@@ -122,7 +140,11 @@
 </footer>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="<?php echo URL; ?>public/scripts/slick.min.js"></script>
+<!-- slick slider -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+	integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
 <script src="<?php echo URL; ?>public/scripts/sendform.js" data-view="<?php echo $view; ?>" id="sendform"></script>
 <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  -->
 <script src="<?php echo URL; ?>public/scripts/responsive-menu.js"></script>
@@ -137,24 +159,13 @@
 	<textarea id="g-recaptcha-response" class="destroy-on-load"></textarea>
 	<script src='//www.google.com/recaptcha/api.js?onload=captchaCallBack&render=explicit' async defer></script>
 	<script>
-		$('.autoplay').slick({
-			accessibility: true,
-			arrows: true,
-			autoplay: false,
-			slidesToShow: 1,
-			slidesPerRow: 1,
-			arrows: true,
-			dots: true,
-			responsive: [{
-				breakpoint: 960,
-				settings: {
-					slidesPerRow: 1
-				}
-			}, {
-				breakpoint: 500,
-				settings: "unslick" // destroys slick
-			}]
+		$('.test-slider').slick();
 
+		$('.works-slider').slick({
+			arrows: true,
+			infinite: true,
+			slidesToShow: 3,
+			slidesToScroll: 1
 		});
 
 		var captchaCallBack = function () {
