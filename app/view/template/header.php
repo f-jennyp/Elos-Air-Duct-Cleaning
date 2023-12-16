@@ -23,6 +23,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
 
+	
+ 
+
 </head>
 
 <body <?php $this->helpers->bodyClasses($view); ?>>
@@ -37,9 +40,7 @@
 							<li <?php $this->helpers->isActiveMenu("home"); ?>><a href="<?php echo URL ?>">HOME</a></li>
 							<li <?php $this->helpers->isActiveMenu("about"); ?>><a
 									href="<?php echo URL ?>about#content">ABOUT US</a></li>
-							<!-- <li <?php $this->helpers->isActiveMenu("services"); ?>>
-								<a href="<?php echo URL ?>services#content"> SERVICES </a> -->
-
+							
 							<li class="dropdown">
 								<button class="dropbtn" <?php $this->helpers->isActiveMenu("services"); ?>><a> SERVICES
 									</a>
@@ -54,6 +55,7 @@
 									<a href="<?php echo URL ?>heatingAndAirConService#content">Heating & Air</a>
 								</div>
 							</li>
+
 							<!-- </li> -->
 							<li <?php $this->helpers->isActiveMenu("testimonials"); ?>><a
 									href="<?php echo URL ?>testimonials#content">TESTIMONIALS</a></li>

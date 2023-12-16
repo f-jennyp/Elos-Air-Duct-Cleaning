@@ -48,91 +48,105 @@
 				</form>
 			</div>
 
-		<div class="left text-left">
-			<div class="logo-holder">
-				<div class="logo"><img src="public/images/content/h-logo.png" alt=""></div> <span>lic#:
-					1112995</span>
-			</div>
-			<div class="info">
-				<div class="text-left phone content">
-					<img src="public/images/content/foot-phone.png" alt="">
-					<div class="text-left">
-						<div class="label">PHONE</div>
-						<a href="tel:<?php $this->info("phone"); ?>">
-							<?php $this->info("phone"); ?>
-						</a>
-					</div>
+			<div class="left text-left">
+				<div class="logo-holder">
+					<div class="logo"><img src="public/images/content/h-logo.png" alt=""></div> <span>lic#:
+						1112995</span>
 				</div>
-
-				<div class="text-left email content">
-					<img src="public/images/content/foot-email.png" alt="">
-					<div class="text-left">
-						<div class="label">EMAIL</div>
-						<a href="mailto:<?php $this->info("email"); ?>">
-							<?php $this->info("email"); ?>
-						</a>
+				<div class="info">
+					<div class="text-left phone content">
+						<img src="public/images/content/foot-phone.png" alt="">
+						<div class="text-left">
+							<div class="label">PHONE</div>
+							<a href="tel:<?php $this->info("phone"); ?>">
+								<?php $this->info("phone"); ?>
+							</a>
+						</div>
 					</div>
-				</div>
 
-				<div class="text-left location content">
-					<img src="public/images/content/foot-add.png" alt="">
-					<div class="text-left">
-						<div class="label">LOCATION</div>
+					<div class="text-left email content">
+						<img src="public/images/content/foot-email.png" alt="">
+						<div class="text-left">
+							<div class="label">EMAIL</div>
+							<a href="mailto:<?php $this->info("email"); ?>">
+								<?php $this->info("email"); ?>
+							</a>
+						</div>
+					</div>
+
+					<div class="text-left location content">
+						<img src="public/images/content/foot-add.png" alt="">
+						<div class="text-left">
+							<div class="label">LOCATION</div>
 							<?php $this->info("address"); ?>
-						</a>
+							</a>
+						</div>
 					</div>
 				</div>
-			</div>
 
 
-			<div class="socials">
-				<ul>
-					<a href="<?php $this->info('fb_link') ?>" target="_blank"><img src="public/images/content/ft-fb.png"
-							alt=""></a>
-					<a href="<?php $this->info('ig_link') ?>" target="_blank"><img src="public/images/content/ft-ig.png"
-							alt=""></a>
-					<a href="<?php $this->info('tt_link') ?>" target="_blank"><img src="public/images/content/ft-tw.png"
-							alt=""></a>
-					<a href="<?php $this->info('gp_link') ?>" target="_blank"><img src="public/images/content/ft-gl.png"
-							alt=""></a>
-				</ul>
+				<div class="socials">
+					<ul>
+						<a href="<?php $this->info('fb_link') ?>" target="_blank"><img
+								src="public/images/content/ft-fb.png" alt=""></a>
+						<a href="<?php $this->info('ig_link') ?>" target="_blank"><img
+								src="public/images/content/ft-ig.png" alt=""></a>
+						<a href="<?php $this->info('tt_link') ?>" target="_blank"><img
+								src="public/images/content/ft-tw.png" alt=""></a>
+						<a href="<?php $this->info('gp_link') ?>" target="_blank"><img
+								src="public/images/content/ft-gl.png" alt=""></a>
+					</ul>
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<nav>
-		<ul>
-			<li <?php $this->helpers->isActiveMenu("home"); ?>><a href="<?php echo URL ?>">HOME</a></li>
-			<li <?php $this->helpers->isActiveMenu("about"); ?>><a href="<?php echo URL ?>about#content">ABOUT
-					US</a></li>
-			<li <?php $this->helpers->isActiveMenu("services"); ?>><a
-					href="<?php echo URL ?>services#content">SERVICES</a></li>
-			<li <?php $this->helpers->isActiveMenu("testimonials"); ?>><a
-					href="<?php echo URL ?>testimonials#content">TESTIMONIALS</a></li>
-			<li <?php $this->helpers->isActiveMenu("contact"); ?>><a href="<?php echo URL ?>contact#content">CONTACT
-					US</a></li>
-			<li <?php $this->helpers->isActiveMenu("gallery"); ?>><a href="<?php echo URL ?>gallery#content">GALLERY</a>
-			</li>
-		</ul>
-	</nav>
+		<nav>
+			<ul>
+				<li <?php $this->helpers->isActiveMenu("home"); ?>><a href="<?php echo URL ?>">HOME</a></li>
+				<li <?php $this->helpers->isActiveMenu("about"); ?>><a href="<?php echo URL ?>about#content">ABOUT
+						US</a></li>
+
+				<li class="dropup">
+					<button class="dropupbtn" <?php $this->helpers->isActiveMenu("services"); ?>><a> SERVICES
+						</a>
+					</button>
+					<div class="dropup-content">
+						<a href="<?php echo URL ?>airDuctCleaning#content">Duct Cleaning</a>
+						<a href="<?php echo URL ?>breatheCleanAir#content">Clean Air</a>
+						<a href="<?php echo URL ?>dryerVentCleaning#content">Dryer Vent Cleaning</a>
+						<a href="<?php echo URL ?>ductRepairAndInspection#content">Duct Repair And
+							Inspection</a>
+						<a href="<?php echo URL ?>heatingAndAirConService#content">Heating & Air</a>
+					</div>
+				</li>
+
+				<li <?php $this->helpers->isActiveMenu("testimonials"); ?>><a
+						href="<?php echo URL ?>testimonials#content">TESTIMONIALS</a></li>
+				<li <?php $this->helpers->isActiveMenu("contact"); ?>><a href="<?php echo URL ?>contact#content">CONTACT
+						US</a></li>
+				<li <?php $this->helpers->isActiveMenu("gallery"); ?>><a
+						href="<?php echo URL ?>gallery#content">GALLERY</a>
+				</li>
+			</ul>
+		</nav>
 
 
 
-	<div class="copyrights">
-		<p class="copy">
-			©
-			<?php echo date("Y"); ?>.
-			<?php $this->info("company_name"); ?> All Rights Reserved.
-			<?php if ($this->siteInfo['policy_link']): ?>
-				<a href="<?php $this->info("policy_link"); ?>">Privacy Policy</a>.
-			<?php endif ?>
-		</p>
-		<p class="techno">
-			<img class="lazy loaded" src="public/images/hd-logo.png" alt=""><a
-				href="http://technodreamoutsourcing.com/">Web Design</a> Done by <a
-				href="http://technodreamoutsourcing.com/"> TechnoDream LLC</a>
-		</p>
-	</div>
+		<div class="copyrights">
+			<p class="copy">
+				©
+				<?php echo date("Y"); ?>.
+				<?php $this->info("company_name"); ?> All Rights Reserved.
+				<?php if ($this->siteInfo['policy_link']): ?>
+					<a href="<?php $this->info("policy_link"); ?>">Privacy Policy</a>.
+				<?php endif ?>
+			</p>
+			<p class="techno">
+				<img class="lazy loaded" src="public/images/hd-logo.png" alt=""><a
+					href="http://technodreamoutsourcing.com/">Web Design</a> Done by <a
+					href="http://technodreamoutsourcing.com/"> TechnoDream LLC</a>
+			</p>
+		</div>
 	</div>
 </footer>
 
