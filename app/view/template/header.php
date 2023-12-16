@@ -13,12 +13,15 @@
 	<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
 	<link href="<?php echo URL; ?>public/styles/style.css" rel="stylesheet">
+	<link href="https://fonts.cdnfonts.com/css/ethnocentric" rel="stylesheet">
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
 	<link rel="stylesheet" href="<?php echo URL; ?>public/fancybox/source/jquery.fancybox.css" media="screen" />
 	<?php $this->helpers->analytics(); ?>
 
-	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700%7CMontserrat:400,700,900%7CLato:700"
-		rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
 
 </head>
 
@@ -34,8 +37,24 @@
 							<li <?php $this->helpers->isActiveMenu("home"); ?>><a href="<?php echo URL ?>">HOME</a></li>
 							<li <?php $this->helpers->isActiveMenu("about"); ?>><a
 									href="<?php echo URL ?>about#content">ABOUT US</a></li>
-							<li <?php $this->helpers->isActiveMenu("services"); ?>><a
-									href="<?php echo URL ?>services#content">SERVICES</a></li>
+							<!-- <li <?php $this->helpers->isActiveMenu("services"); ?>>
+								<a href="<?php echo URL ?>services#content"> SERVICES </a> -->
+
+							<li class="dropdown">
+								<button class="dropbtn" <?php $this->helpers->isActiveMenu("services"); ?>><a> SERVICES
+									</a>
+									<i class="fa fa-caret-down"></i>
+								</button>
+								<div class="dropdown-content">
+									<a href="<?php echo URL ?>airDuctCleaning#content">Duct Cleaning</a>
+									<a href="<?php echo URL ?>breatheCleanAir#content">Clean Air</a>
+									<a href="<?php echo URL ?>dryerVentCleaning#content">Dryer Vent Cleaning</a>
+									<a href="<?php echo URL ?>ductRepairAndInspection#content">Duct Repair And
+										Inspection</a>
+									<a href="<?php echo URL ?>heatingAndAirConService#content">Heating & Air</a>
+								</div>
+							</li>
+							<!-- </li> -->
 							<li <?php $this->helpers->isActiveMenu("testimonials"); ?>><a
 									href="<?php echo URL ?>testimonials#content">TESTIMONIALS</a></li>
 							<li <?php $this->helpers->isActiveMenu("contact"); ?>><a
@@ -47,7 +66,7 @@
 				</div>
 
 				<div class="socials-con flex">
-					<div class="btn"><a href="<?php echo URL ?>quote#content">GET A QUOTE</a></div>
+					<div class="btn"><a href="<?php echo URL ?>contact#content">GET A QUOTE</a></div>
 					<div class="flex h-socials">
 						<a href="<?php $this->info('fb_link') ?>" target="_blank"><img
 								src="public/images/content/h-fb.png" alt=""></a>
@@ -82,10 +101,10 @@
 						Call me so we can talk!</span>
 					<div class="btn-holder">
 						<div class="btn">
-							<a href="<?php echo URL ?>learn#content">LEARN MORE</a>
+							<a href="<?php echo URL ?>about#content">LEARN MORE</a>
 						</div>
 						<div class="btn">
-							<a href="<?php echo URL ?>quote#content">GET A QUOTE</a>
+							<a href="<?php echo URL ?>contact#content">GET A QUOTE</a>
 						</div>
 					</div>
 				</div>
