@@ -8,6 +8,6 @@ $(function() {
 		menu.slideToggle();
 	});
 	$(window).resize(function() {
-		if($(window).width() > 800) $('nav ul').removeAttr('style');
+		if($(window).width() > 959) $('nav ul').removeAttr('style');
 	});
 });

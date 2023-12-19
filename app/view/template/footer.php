@@ -107,7 +107,7 @@
 						US</a></li>
 
 				<li class="dropup">
-					<button class="dropupbtn" <?php $this->helpers->isActiveMenu("services"); ?>><a> SERVICES
+					<button class="dropupbtn" onclick="myFunction()" <?php $this->helpers->isActiveMenu("services"); ?>><a> SERVICES
 						</a>
 					</button>
 					<div class="dropup-content">
@@ -141,10 +141,8 @@
 					<a href="<?php $this->info("policy_link"); ?>">Privacy Policy</a>.
 				<?php endif ?>
 			</p>
-			<p class="techno">
-				<img class="lazy loaded" src="public/images/hd-logo.png" alt=""><a
-					href="http://technodreamoutsourcing.com/">Web Design</a> Done by <a
-					href="http://technodreamoutsourcing.com/"> TechnoDream LLC</a>
+			<p class="techno">Web Design Done by
+				<img class="lazy loaded" src="public/images/hd-logo.png" alt="">
 			</p>
 		</div>
 	</div>
@@ -176,7 +174,21 @@
 			arrows: true,
 			infinite: true,
 			slidesToShow: 3,
-			slidesToScroll: 1
+			slidesToScroll: 1,
+			responsive: [
+				{
+					breakpoint: 959,
+					settings: {
+					slidesToShow: 2,
+					}
+				},
+				{
+					breakpoint: 580,
+					settings: {
+					slidesToShow: 1,
+					}
+				}
+			]
 		});
 
 		var captchaCallBack = function () {
@@ -213,6 +225,27 @@
 
 	</script>
 
+	<script>
+		
+		function myFunction() {
+			console.log('dito')
+			var dropdownContent = document.getElementById("myDropdown");
+			dropdownContent.classList.toggle("show");
+		}
+
+		window.onclick = function (e) {
+			if (!e.target.matches('.dropbtn')) {
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				for (var i = 0; i < dropdowns.length; i++) {
+					var openDropdown = dropdowns[i];
+					if (openDropdown.classList.contains('show')) {
+						openDropdown.classList.remove('show');
+					}
+				}
+			}
+		}
+	</script>
+
 <?php endif; ?>
 
 
@@ -228,6 +261,9 @@
 				}
 			}
 		});
+
+
+
 	</script>
 <?php endif; ?>
 

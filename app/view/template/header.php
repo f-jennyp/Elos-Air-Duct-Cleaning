@@ -20,11 +20,12 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
 
-	
- 
+
+
 
 </head>
 
@@ -40,13 +41,12 @@
 							<li <?php $this->helpers->isActiveMenu("home"); ?>><a href="<?php echo URL ?>">HOME</a></li>
 							<li <?php $this->helpers->isActiveMenu("about"); ?>><a
 									href="<?php echo URL ?>about#content">ABOUT US</a></li>
-							
+									
 							<li class="dropdown">
-								<button class="dropbtn" <?php $this->helpers->isActiveMenu("services"); ?>><a> SERVICES
-									</a>
+								<button class="dropbtn" onclick="myFunction()">SERVICES
 									<i class="fa fa-caret-down"></i>
 								</button>
-								<div class="dropdown-content">
+								<div class="dropdown-content" id="myDropdown">
 									<a href="<?php echo URL ?>airDuctCleaning#content">Duct Cleaning</a>
 									<a href="<?php echo URL ?>breatheCleanAir#content">Clean Air</a>
 									<a href="<?php echo URL ?>dryerVentCleaning#content">Dryer Vent Cleaning</a>
@@ -56,7 +56,8 @@
 								</div>
 							</li>
 
-							<!-- </li> -->
+
+
 							<li <?php $this->helpers->isActiveMenu("testimonials"); ?>><a
 									href="<?php echo URL ?>testimonials#content">TESTIMONIALS</a></li>
 							<li <?php $this->helpers->isActiveMenu("contact"); ?>><a
