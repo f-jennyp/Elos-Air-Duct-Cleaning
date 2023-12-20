@@ -79,14 +79,13 @@
 						<div class="text-left">
 							<div class="label">LOCATION</div>
 							<?php $this->info("address"); ?>
-							</a>
 						</div>
 					</div>
 				</div>
 
 
 				<div class="socials">
-					<ul>
+					<
 						<a href="<?php $this->info('fb_link') ?>" target="_blank"><img
 								src="public/images/content/ft-fb.png" alt=""></a>
 						<a href="<?php $this->info('ig_link') ?>" target="_blank"><img
@@ -95,7 +94,7 @@
 								src="public/images/content/ft-tw.png" alt=""></a>
 						<a href="<?php $this->info('gp_link') ?>" target="_blank"><img
 								src="public/images/content/ft-gl.png" alt=""></a>
-					</ul>
+					
 				</div>
 			</div>
 		</div>
@@ -225,29 +224,26 @@
 
 	</script>
 
-	<script>
-		
-		function myFunction() {
-			console.log('dito')
-			var dropdownContent = document.getElementById("myDropdown");
-			dropdownContent.classList.toggle("show");
-		}
+<?php endif; ?>
 
-		window.onclick = function (e) {
-			if (!e.target.matches('.dropbtn')) {
-				var dropdowns = document.getElementsByClassName("dropdown-content");
-				for (var i = 0; i < dropdowns.length; i++) {
-					var openDropdown = dropdowns[i];
-					if (openDropdown.classList.contains('show')) {
-						openDropdown.classList.remove('show');
-					}
+<script>
+	function myFunction() {
+		var dropdownContent = document.getElementById("myDropdown");
+		dropdownContent.classList.toggle("show");
+	}
+
+	window.onclick = function (e) {
+		if (!e.target.matches('.dropbtn')) {
+			var dropdowns = document.getElementsByClassName("dropdown-content");
+			for (var i = 0; i < dropdowns.length; i++) {
+				var openDropdown = dropdowns[i];
+				if (openDropdown.classList.contains('show')) {
+					openDropdown.classList.remove('show');
 				}
 			}
 		}
-	</script>
-
-<?php endif; ?>
-
+	}
+</script>
 
 <?php if ($view == "gallery"): ?>
 	<script src="<?php echo URL; ?>public/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>

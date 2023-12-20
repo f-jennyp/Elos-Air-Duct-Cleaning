@@ -1,7 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/ethnocentric');
 
 @font-face {
-  font-family: "Myriad Pro";
+  font-family: "Myriad-Pro";
   src: url(http://www.anaveer.in/honda/font/MYRIADPRO-REGULAR.OTF) format("truetype");
 }
 
@@ -205,8 +205,8 @@ span {
 
 #header .nav-holder {
   flex: 1 1 auto;
-  width: 100%;
-  max-width: 841px;
+    width: 100%;
+    max-width: 841px;
 }
 
 #header nav a#pull {
@@ -236,7 +236,7 @@ nav ul li {
   /* padding: 31px 0; */
 }
 
-nav ul li a {
+nav ul li a{
   font-size: 18px;
   font-family: 'Poppins';
   color: #fff;
@@ -246,7 +246,7 @@ nav ul li a {
   display: block;
 }
 
-.dropdown .dropbtn {
+.dropdown .dropbtn{
   font-size: 18px;
   font-family: 'Poppins';
   color: #fff;
@@ -276,8 +276,8 @@ nav ul li a {
   flex-wrap: nowrap;
   gap: 5px;
   flex: 1 1 auto;
-  width: 100%;
-  max-width: 504px;
+    width: 100%;
+    max-width: 504px;
 }
 
 #header .socials-con .btn {
@@ -307,12 +307,11 @@ nav ul li a {
   margin: 0;
 }
 
-.navbar a:hover,
-.dropdown:hover .dropbtn {
+.navbar a:hover, .dropdown:hover .dropbtn{
   background-color: #fff;
 }
 
-.dropdown:hover>.dropbtn {
+.dropdown:hover > .dropbtn {
   color: #2626FF;
 }
 
@@ -321,7 +320,7 @@ nav ul li a {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   transition: opacity 0.3s ease;
 }
@@ -341,7 +340,7 @@ nav ul li a {
 
 .show {
   display: block;
-
+  
 }
 
 @media screen and (max-width: 959px) {
@@ -354,7 +353,7 @@ nav ul li a {
 
   #header .header-con {
     flex-direction: column;
-  }
+  }  
 
   #header nav {
     width: 100%;
@@ -373,7 +372,6 @@ nav ul li a {
     width: 100%;
     flex-direction: column-reverse;
     max-width: 100%;
-    padding: 0 0 10px;
   }
 
   #header .h-socials {
@@ -386,8 +384,7 @@ nav ul li a {
     text-align: left;
   }
 
-  #header nav ul li a,
-  nav ul li a {
+  #header nav ul li a, nav ul li a {
     padding: 10px 0;
     text-align: left;
     width: 100%;
@@ -402,8 +399,7 @@ nav ul li a {
     background: none;
   }
 
-  nav ul li a,
-  .dropdown .dropbtn {
+  nav ul li a, .dropdown .dropbtn {
     line-height: 27px;
     font-size: 15px;
     padding: 5px 0px;
@@ -590,11 +586,7 @@ nav ul li a {
 }
 
 @media screen and (max-width: 959px) {
-  .nav-holder {
-    min-height: 60px;
-    width: 100%;
-    min-width: 100%;
-  }
+  .nav-holder { min-height: 60px; width: 100%; min-width: 100%; }
 
   #banner .banner-con {
     text-align: center;
@@ -686,7 +678,7 @@ nav ul li a {
 #about .right img {
   border-radius: 56px;
   max-width: 657px;
-  width: 100%;
+    width: 100%;
 }
 
 #about .right .to-sm {
@@ -721,11 +713,7 @@ nav ul li a {
 
   #about .phone {
     display: block;
-  }
-
-  #about .content {
-    font-size: 16px;
-  }
+   }
 }
 
 
@@ -876,8 +864,7 @@ nav ul li a {
 
 #testimonials .left {
   color: #2626FF;
-  width: 100%;
-  max-width: 560px;
+  width: 560px;
 }
 
 #testimonials .left .btn-holder {
@@ -999,8 +986,8 @@ nav ul li a {
     text-align: center;
   }
 
-  #testimonials .remarks, #testimonials .auth-loc {
-    font-size: 14px;
+  #testimonials .remarks {
+    font-size: 15px;
   }
 
   #testimonials .left .btn-holder {
@@ -1032,10 +1019,6 @@ nav ul li a {
   #testimonials .btn-next-slider {
     right: 17px;
   }
-
-  #testimonials .auth {
-    font-size: 18px;
-}
 
 }
 
@@ -1142,9 +1125,7 @@ nav ul li a {
     margin-top: 5px;
   }
 
-  #service-area .ser-area-con p {
-    font-size: 16px;
-  }
+  #service-area {}
 
 
 
@@ -1468,10 +1449,6 @@ form .alert-danger {
     text-align: center;
   }
 
-  #footer .contact .title {
-    font-size: 36px;
-  }
-
   #footer .contact,
   #footer .left .logo-holder,
   #footer .left .info,
@@ -1659,8 +1636,7 @@ form .alert-danger {
     margin: 0;
   }
 
-  .inner #about .abt-content,
-  .inner #testimonials .row {
+  .inner #about .abt-content, .inner #testimonials .row {
     display: block;
     width: 100%;
   }
@@ -1697,7 +1673,9 @@ form .alert-danger {
 
 
 /*425*/
-@media screen and (max-width: 766px) {}
+@media screen and (max-width: 766px) {
+  
+}
 
 
 /*375*/

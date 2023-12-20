@@ -20,7 +20,7 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	
+
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
 
@@ -41,7 +41,7 @@
 							<li <?php $this->helpers->isActiveMenu("home"); ?>><a href="<?php echo URL ?>">HOME</a></li>
 							<li <?php $this->helpers->isActiveMenu("about"); ?>><a
 									href="<?php echo URL ?>about#content">ABOUT US</a></li>
-									
+
 							<li class="dropdown">
 								<button class="dropbtn" onclick="myFunction()">SERVICES
 									<i class="fa fa-caret-down"></i>
@@ -100,7 +100,7 @@
 				<div class="row">
 					<h1>making a clean difference.</h1>
 					<span class="to-sm">You want to be sure that your air ducts are sealed so that all the ENERGY your
-						heating/cooling system is producing is getting into your home and not being wasted. </br>
+						heating/cooling system is producing is getting into your home and not being wasted. <br>
 						Call me so we can talk!</span>
 					<div class="btn-holder">
 						<div class="btn">
@@ -113,6 +113,5 @@
 				</div>
 			</div>
 		</div>
-	</div>
 	</div>
 	<!-- <?php //endif; ?> -->

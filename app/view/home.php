@@ -17,14 +17,14 @@
 					dryer
 					vent cleaning, air duct inspection and repair. ELOS also does thermostat and system upgrades and
 					replacements.
-					</br> </br>
+					<br> <br>
 					Plus, you also get full system reviews and pre-start of season preps for seasonal changes, winter
 					heating and summer air conditioning, including new construction and remodels.
-					</br> </br>
+					<br> <br>
 					If you are a building owner, contractor, or architects/interior designer, you will get comprehensive
 					support services from ELOS including prompt quotes, budgetary info, and professional, experienced
 					pre-start cleanups timed perfectly to your build/remodel schedule.
-					</br> </br>
+					<br> <br>
 					ELOS provides these service and products throughout North Western California, from Monterey to
 					Northern
 					California including the greater San Francisco Bay Area
