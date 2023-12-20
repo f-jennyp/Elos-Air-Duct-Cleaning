@@ -72,15 +72,15 @@
 					<div class="btn"><a href="<?php echo URL ?>contact#content">GET A QUOTE</a></div>
 					<div class="flex h-socials">
 						<a href="<?php $this->info('fb_link') ?>" target="_blank"><img
-								src="public/images/content/h-fb.png" alt=""></a>
+								src="public/images/content/h-fb.png" alt="facebook"></a>
 						<a href="<?php $this->info('ig_link') ?>" target="_blank"><img
-								src="public/images/content/h-ig.png" alt=""></a>
+								src="public/images/content/h-ig.png" alt="instagram"></a>
 						<a href="<?php $this->info('tt_link') ?>" target="_blank"><img
-								src="public/images/content/h-tw.png" alt=""></a>
+								src="public/images/content/h-tw.png" alt="twitter"></a>
 						<a href="<?php $this->info('yt_link') ?>" target="_blank"><img
-								src="public/images/content/h-yt.png" alt=""></a>
+								src="public/images/content/h-yt.png" alt="youtube"></a>
 						<a href="<?php $this->info('li_link') ?>" target="_blank"><img
-								src="public/images/content/h-in.png" alt=""></a>
+								src="public/images/content/h-in.png" alt="linkedin"></a>
 					</div>
 				</div>
 			</div>

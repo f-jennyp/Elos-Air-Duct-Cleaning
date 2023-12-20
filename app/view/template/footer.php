@@ -86,13 +86,13 @@
 
 				<div class="socials">
 						<a href="<?php $this->info('fb_link') ?>" target="_blank"><img
-								src="public/images/content/ft-fb.png" alt=""></a>
+								src="public/images/content/ft-fb.png" alt="facebook"></a>
 						<a href="<?php $this->info('ig_link') ?>" target="_blank"><img
-								src="public/images/content/ft-ig.png" alt=""></a>
+								src="public/images/content/ft-ig.png" alt="instagram"></a>
 						<a href="<?php $this->info('tt_link') ?>" target="_blank"><img
-								src="public/images/content/ft-tw.png" alt=""></a>
+								src="public/images/content/ft-tw.png" alt="twitter"></a>
 						<a href="<?php $this->info('gp_link') ?>" target="_blank"><img
-								src="public/images/content/ft-gl.png" alt=""></a>
+								src="public/images/content/ft-gl.png" alt="google-plus"></a>
 					
 				</div>
 			</div>
@@ -140,7 +140,7 @@
 				<?php endif ?>
 			</p>
 			<p class="techno">Web Design Done by
-				<img class="lazy loaded" src="public/images/hd-logo.png" alt="">
+				<img class="lazy loaded" src="public/images/hd-logo.png" alt="techno-logo">
 			</p>
 		</div>
 	</div>
