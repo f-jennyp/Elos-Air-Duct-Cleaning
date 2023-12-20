@@ -78,14 +78,13 @@
 						<img src="public/images/content/foot-add.png" alt="">
 						<div class="text-left">
 							<div class="label">LOCATION</div>
-							<?php $this->info("address"); ?>
+							<a> <?php $this->info("address"); ?></a>
 						</div>
 					</div>
 				</div>
 
 
 				<div class="socials">
-					<
 						<a href="<?php $this->info('fb_link') ?>" target="_blank"><img
 								src="public/images/content/ft-fb.png" alt=""></a>
 						<a href="<?php $this->info('ig_link') ?>" target="_blank"><img

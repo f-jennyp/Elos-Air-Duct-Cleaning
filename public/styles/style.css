@@ -354,6 +354,7 @@ nav ul li a {
 
   #header .header-con {
     flex-direction: column;
+    position: static;
   }
 
   #header nav {
@@ -454,6 +455,7 @@ nav ul li a {
     display: block;
     position: relative;
     background-color: #0f0fc2;
+    transition: all 2s ease-in-out .5s;
     /* ADD TRANSITION HERE */
   }
 }
@@ -603,6 +605,13 @@ nav ul li a {
     top: 0;
   }
 
+  #banner .img-holder img {
+    height: 100%;
+    width: 100%;
+    max-height: 266px;
+    object-fit: cover;
+  }
+
   #banner .logo-holder {
     margin: 0 auto;
     width: 100%;
@@ -613,10 +622,14 @@ nav ul li a {
     max-width: 320px;
   }
 
+  #banner .logo-holder span {
+    font-size: 16px;
+  }
+
   #banner .banner-con .content-holder {
-    /* background: #ffff; */
+    background: #ffff;
     color: #000;
-    /* padding-top: 27px; */
+    padding-top: 27px;
   }
 
   #banner .content-holder .row {
@@ -1497,6 +1510,11 @@ form .alert-danger {
     margin: 0 auto;
   }
 
+  #footer .left a {
+    font-size: 15px;
+    word-break: break-all;
+  }
+
 
   #footer nav {
     padding: 15px 0;
@@ -1636,11 +1654,41 @@ form .alert-danger {
 
 
 /*RESPONSIVE*/
-@media screen and (max-width: 1440px) {}
+@media screen and (max-width: 1600px) {
+  #about {
+    margin-top: -299px;
+  }
+}
+
+
+@media screen and (max-width: 1520px) {
+  #about {
+    margin-top: -304px;
+    padding-top: 264px;
+  }
+}
+
+@media screen and (max-width: 1495px) {
+  #banner .banner-con {
+    padding-top: 47px;
+  }
+
+  #header .header-con {
+    justify-content: center;
+    border-radius: 0;
+  }
+}
 
 
 /*1200*/
-@media screen and (max-width: 1439px) {}
+@media screen and (max-width: 1440px) {
+
+  #about {
+    margin-top: 0;
+    padding-top: 0;
+    background: none;
+  }
+}
 
 @media screen and (max-width: 1200px) {
   body {
@@ -1652,11 +1700,12 @@ form .alert-danger {
   }
 
   #banner .logo-holder {
-    margin-bottom: 33px;
+    margin-bottom: 22px;
   }
 
+
   #about {
-    margin: 0;
+    margin-top: 108px;
   }
 
   .inner #about .abt-content,
@@ -1666,11 +1715,27 @@ form .alert-danger {
   }
 }
 
+
+@media screen and (max-width: 1123px) {
+  #about {
+    margin-top: 153px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  #about {
+    margin-top: 193px;
+  }
+}
+
 /*1024*/
-@media screen and (max-width: 1199px) {}
 
 /*960*/
-@media screen and (max-width: 1023px) {}
+@media screen and (max-width: 1023px) {
+  #about {
+    margin-top: 207px;
+  }
+}
 
 /*768*/
 @media screen and (max-width: 959px) {
@@ -1691,6 +1756,18 @@ form .alert-danger {
 
   .bg-img {
     display: none;
+  }
+
+  #about {
+    margin-top: 40px;
+  }
+
+  .inner #banner {
+    min-height: auto;
+  }
+  
+  .inner #content {
+    padding: 20px 0;
   }
 
 }
