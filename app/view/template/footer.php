@@ -147,10 +147,15 @@
 </footer>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
 <!-- slick slider -->
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"
-	integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> -->
+<!-- fancy-box -->
+<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script> -->
+<!-- <script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script> -->
 
 <script src="<?php echo URL; ?>public/scripts/sendform.js" data-view="<?php echo $view; ?>" id="sendform"></script>
 <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  -->
@@ -168,26 +173,26 @@
 	<script>
 		$('.test-slider').slick();
 
-		$('.works-slider').slick({
-			arrows: true,
-			infinite: true,
-			slidesToShow: 3,
-			slidesToScroll: 1,
-			responsive: [
-				{
-					breakpoint: 959,
-					settings: {
-					slidesToShow: 2,
-					}
-				},
-				{
-					breakpoint: 580,
-					settings: {
-					slidesToShow: 1,
-					}
-				}
-			]
-		});
+		// $('.works-slider').slick({
+		// 	arrows: true,
+		// 	infinite: true,
+		// 	slidesToShow: 3,
+		// 	slidesToScroll: 1,
+		// 	responsive: [
+		// 		{
+		// 			breakpoint: 959,
+		// 			settings: {
+		// 			slidesToShow: 2,
+		// 			}
+		// 		},
+		// 		{
+		// 			breakpoint: 580,
+		// 			settings: {
+		// 			slidesToShow: 1,
+		// 			}
+		// 		}
+		// 	]
+		// });
 
 		var captchaCallBack = function () {
 			$('.g-recaptcha').each(function (index, el) {
@@ -245,10 +250,14 @@
 </script>
 
 <?php if ($view == "gallery"): ?>
-	<script src="<?php echo URL; ?>public/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
-	<script src="<?php echo URL; ?>public/scripts/jquery.pajinate.js"></script>
+	<script type="text/javascript" src="public/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+	<script type="text/javascript" src="public/scripts/jquery.pajinate.js"></script>
 	<script>
-		$('#gall1').pajinate({ num_page_links_to_display: 3, items_per_page: 10 });
+	$(document).ready(function(){
+		$('#gall1').pajinate({
+			num_page_links_to_display: 3,
+			items_per_page: 9
+		});
 		$('.fancy').fancybox({
 			helpers: {
 				title: {
@@ -256,9 +265,7 @@
 				}
 			}
 		});
-
-
-
+	})
 	</script>
 <?php endif; ?>
 

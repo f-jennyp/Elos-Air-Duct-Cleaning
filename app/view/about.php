@@ -7,8 +7,7 @@
 		<div class="row flex abt-content">
 			<div class="left">
 				<div class="wel-con">
-					<div class="to-sm">WELCOME TO</div>
-					<h1>ELOS Air duct</h1>
+					<h1>ABOUT US</h1>
 				</div>
 				<div class="content">
 					ELOS (Everybody Loves Our Service, conveniently located in the South San Francisco Bay Area,
@@ -30,15 +29,6 @@
 					California including the greater San Francisco Bay Area
 				</div>
 
-
-				<div class="btn-holder">
-					<div class="btn">
-						<a href="<?php echo URL ?>about#content">LEARN MORE</a>
-					</div>
-					<div class="btn">
-						<a href="<?php echo URL ?>contact#content">GET A QUOTE</a>
-					</div>
-				</div>
 			</div>
 
 			<div class="right">
@@ -47,7 +37,7 @@
 				</div>
 
 				<h3 class="phone">
-					<div class="to-sm">call us at</div>
+					<div class="to-sm" style="color: #000">call us at</div>
 					<a href="tel:<?php $this->info("phone"); ?>">
 						<?php $this->info("phone"); ?>
 					</a>

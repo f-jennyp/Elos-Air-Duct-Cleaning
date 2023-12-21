@@ -10,12 +10,16 @@
 
 	<?php $this->helpers->seo($view); ?>
 	<link rel="icon" href="public/images/favicon.png" type="image/x-icon">
+
+	<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script> -->
 	<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
 	<link href="<?php echo URL; ?>public/styles/style.css" rel="stylesheet">
 	<link href="https://fonts.cdnfonts.com/css/ethnocentric" rel="stylesheet">
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
-	<link rel="stylesheet" href="<?php echo URL; ?>public/fancybox/source/jquery.fancybox.css" media="screen" />
+
+	<link rel="stylesheet" href="public/fancybox/source/jquery.fancybox.css" media="screen" />
+	<link rel="stylesheet" href="public/fancybox/source/jquery.fancybox-1.3.4.css" media="screen" />
 	<?php $this->helpers->analytics(); ?>
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">

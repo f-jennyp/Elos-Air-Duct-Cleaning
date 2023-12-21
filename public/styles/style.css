@@ -475,72 +475,7 @@ nav ul li a {
   background-size: cover;
 } */
 
-.inner #banner {
-  min-height: 300px;
-  height: auto;
-  max-height: 420px;
-}
 
-.inner #banner .content-holder {
-  display: none;
-}
-
-.inner #content {
-  position: relative;
-  background: #fff;
-  padding: 80px 0;
-  /* min-height: 500px; */
-}
-
-.inner #content .row {
-  max-width: 1220px;
-}
-
-.inner #content #about,
-.inner #content #testimonials,
-.inner #content #contact {
-  background-image: none;
-  padding: 0;
-  margin: 0;
-}
-
-.inner #content #testimonials {
-  padding-top: 100px
-}
-
-.inner #testimonials .left,
-.inner #about .left .wel-con {
-  text-align: center;
-}
-
-.inner #testimonials .right {
-  margin: auto;
-  width: 100%;
-}
-
-.inner #testimonials .btn-next-slider {
-  right: -6px;
-}
-
-.inner #about .abt-content,
-.inner #testimonials .row {
-  justify-content: space-between;
-  gap: 10px;
-  width: 100%;
-  flex-wrap: nowrap;
-}
-
-.inner #about .left,
-.inner #testimonials .left {
-  margin: auto;
-  margin-bottom: 30px;
-}
-
-
-
-.inner #footer {
-  background-color: #fff;
-}
 
 #banner {
   position: relative;
@@ -630,7 +565,8 @@ nav ul li a {
     max-width: 320px;
   }
 
-  #banner .logo-holder span {
+  #banner .logo-holder span,
+  #footer .logo-holder span {
     font-size: 16px;
   }
 
@@ -958,18 +894,19 @@ nav ul li a {
   right: 67px;
 }
 
-.slick-prev::before,
+/* .slick-prev::before, */
 .btn-prev-slider::before {
   content: '<';
 }
 
-.slick-next::before,
+/* .slick-next::before, */
 .btn-next-slider::before {
   content: '>';
 }
 
+/* 
 .slick-prev::before,
-.slick-next::before,
+.slick-next::before, */
 .btn-prev-slider::before,
 .btn-next-slider::before {
   font-family: 'Poppins';
@@ -988,8 +925,9 @@ nav ul li a {
   opacity: 1;
 }
 
+/* 
 .slick-prev,
-.slick-next,
+.slick-next, */
 .btn-prev-slider,
 .btn-next-slider {
   display: block;
@@ -1043,8 +981,8 @@ nav ul li a {
     padding: 30px 0;
   }
 
-  #testimonials .slick-prev,
-  #testimonials .slick-next,
+  /* #testimonials .slick-prev,
+  #testimonials .slick-next, */
   #testimonials .btn-prev-slider,
   #testimonials .btn-next-slider {
     top: 65%;
@@ -1109,26 +1047,41 @@ nav ul li a {
   margin-right: 28px;
 }
 
-#service-area .works-slider {
-  margin-top: 30px;
+#service-area .works-content {
+  padding: 20px;
 }
 
-#service-area .slick-track {
+/* #service-area .slick-track {
   display: flex;
   gap: 20px;
 }
 
 #service-area .slick-slide {
   float: none;
+} */
+
+#service-area .works .btn-prev-slider,
+#service-area .works .btn-next-slider {
+  top: 60%;
 }
 
-#service-area .works .slick-prev {
+#service-area .works .btn-prev-slider {
   left: 0px;
-  z-index: 1;
+  margin-left: 0px;
 }
 
-#service-area .works .slick-next {
+#service-area .works .btn-next-slider {
   right: 0px;
+}
+
+#service-area .img-holder {
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 15px;
+}
+
+#service-area .works {
+  position: relative;
 }
 
 #service-area .works img {
@@ -1206,6 +1159,11 @@ nav ul li a {
 }
 
 #footer .contact p {
+  -webkit-font-family: 'Myriad Pro', sans-serif;
+  -moz-font-family: 'Myriad Pro', sans-serif;
+  -ms-font-family: 'Myriad Pro', sans-serif;
+  -o-font-family: 'Myriad Pro', sans-serif;
+  font-family: 'Myriad Pro', sans-serif;
   font-family: 'Myriad Pro';
   font-size: 15px;
   width: 100%;
@@ -1274,6 +1232,11 @@ form .alert-danger {
 
 .ctc-form ::placeholder,
 .ctc-form label {
+  -webkit-font-family: 'Myriad Pro', sans-serif;
+  -moz-font-family: 'Myriad Pro', sans-serif;
+  -ms-font-family: 'Myriad Pro', sans-serif;
+  -o-font-family: 'Myriad Pro', sans-serif;
+  font-family: 'Myriad Pro', sans-serif;
   font-family: 'Myriad Pro', sans-serif;
   font-size: 13px;
   font-weight: 100;
@@ -1574,21 +1537,104 @@ form .alert-danger {
   max-width: 800px;
   margin: 0 auto
 } */
+.inner #content {
+  position: relative;
+  background: #fff;
+  padding: 80px 0;
+  /* min-height: 500px; */
+}
+
 
 .inner #content h1 {
   padding-bottom: 20px;
   width: 100%;
   text-align: center;
+  color: #2626FF;
 }
 
+.inner #content .row {
+  max-width: 1220px;
+}
 
-/*inner gallery*/
+.inner #banner {
+  min-height: 300px;
+  height: auto;
+  max-height: 420px;
+}
+
+.inner #banner .content-holder {
+  display: none;
+}
+
+.inner #about,
+.inner #testimonials,
+.inner #contact {
+  background-image: none;
+  padding: 0;
+  margin: 0;
+}
+
+.inner #testimonials {
+  padding-top: 100px
+}
+
+.inner #testimonials .left,
+.inner #about .left .wel-con {
+  text-align: center;
+}
+
+.inner #testimonials .right {
+  margin: auto;
+  width: 100%;
+}
+
+.inner #testimonials .btn-next-slider {
+  right: -6px;
+}
+
+.inner #about .abt-content {
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+.inner #testimonials .row {
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+}
+
+.inner #testimonials .btn-prev-slider,
+.inner #testimonials .btn-next-slider {
+  top: 65%
+}
+
+.inner #about .left,
+.inner #testimonials .left {
+  margin: auto;
+}
+
+.inner #footer {
+  background-color: #fff;
+}
+
+.inner #footer .contact .title {
+  font-family: 'Ethnocentric Rg', sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1.2;
+  padding: 10px 0;
+  color: #2626FF;
+}
+
 .img-responsive {
   width: 200px;
   height: 200px;
   -o-object-fit: cover;
   object-fit: cover;
 }
+
 
 #content .gallery-container {
   text-align: center;
@@ -1615,9 +1661,16 @@ form .alert-danger {
   transition: border 0.5s ease-in-out 0s;
 }
 
+#content .thumbnail img {
+  height: 225px;
+  width: 225px;
+  object-fit: cover;
+}
+
 #content .thumbnail:hover {
   transform: scale(1.02);
 }
+
 
 #content .page_navigation {
   display: inline-block;
@@ -1701,6 +1754,10 @@ form .alert-danger {
     padding-top: 0;
     background: none;
   }
+
+  #about .right .to-sm {
+    color: #000;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -1783,6 +1840,10 @@ form .alert-danger {
     padding: 20px 0;
   }
 
+  #service-area .img-holder .w-img1 {
+    display: none;
+  }
+
 }
 
 
@@ -1791,7 +1852,13 @@ form .alert-danger {
 
 
 /*375*/
-@media screen and (max-width: 424px) {}
+@media screen and (max-width: 599px) {
+
+  #service-area .img-holder .w-img1,
+  #service-area .img-holder .w-img2 {
+    display: none;
+  }
+}
 
 /*320*/
 @media screen and (max-width: 374px) {}
