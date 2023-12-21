@@ -43,7 +43,7 @@
 
 			<div class="right">
 				<div class="img-holder">
-					<img src="public/images/content/wel-img-right.png" alt="">
+					<img src="public/images/content/wel-img-right.jpg" alt="">
 				</div>
 
 				<h3 class="phone">
@@ -89,7 +89,7 @@
 			<div class="ser-con2 flex">
 				<div class="left">
 					<div class="img-holder">
-						<img src="public/images/content/ser-img-left.png" alt="">
+						<img src="public/images/content/ser-img-left.jpg" alt="">
 					</div>
 				</div>
 
@@ -197,15 +197,15 @@
 				<div class="btn-prev-slider"></div>
 				<div class="img-holder flex">
 					<div class="box w-img1">
-						<img src="public/images/content/works-img1.png" alt="">
+						<img src="public/images/content/works-img1.jpg" alt="">
 					</div>
 
 					<div class="box w-img2">
-						<img src="public/images/content/works-img2.png" alt="">
+						<img src="public/images/content/works-img2.jpg" alt="">
 					</div>
 
 					<div class="box w-img3">
-						<img src="public/images/content/works-img3.png" alt="">
+						<img src="public/images/content/works-img3.jpg" alt="">
 					</div>
 				</div>
 				<div class="btn-next-slider"></div>
